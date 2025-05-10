@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Công ty thiết kế xây dựng Nevo - Giải pháp xây dựng chuyên nghiệp và hiện đại.">
+  <meta name="keywords" content="thiết kế xây dựng, xây dựng nhà ở, công trình dân dụng, Nevo">
+  <meta name="author" content="Công ty Nevo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu Công ty Nevo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 1400px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav {
+      background-color: rgb(255, 243, 23);
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hinh-anh {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .hinh-anh img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .hinh-anh button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 10;
+    }
+
+    .hinh-anh .prev {
+      left: 10px;
+    }
+
+    .hinh-anh .next {
+      right: 10px;
+    }
+
+    .hinh-anh button:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    section {
+      padding: 20px;
+      background-color: white;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+
+    section h1, section h2 {
+      color: #2c3e50;
+    }
+
+    section p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    section ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+
+    section ul li {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-info a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column; /* Thay đổi từ hàng ngang sang hàng dọc */
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  flex-direction: column; /* Hiển thị theo hàng dọc */
+  align-items: center;
+}
+
+.footer-left p, .footer-right a {
+  margin: 5px 0; /* Tạo khoảng cách giữa các mục */
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo1.jpg" alt="logo công ty">
+</header>
+
+<nav>
+  <a href="html.html">Trang chủ</a>
+  <a href="gioi-thieu.html">Giới thiệu</a>
+  <a href="#san-pham">Sản phẩm</a>
+  <a href="du-an.html">Dự án</a>
+  <a href="#tin-tuc">Tin tức</a>
+  <a href="#hoat-dong">Hoạt động</a>
+  <a href="#thu-vien-ho-so-mau">Thư viện hồ sơ mẫu</a>
+</nav>
+
+<section id="trang-chu">
+  <div class="hinh-anh">
+    <img id="slideshow" src="ảnh trang chủ.jpg" alt="ảnh trang chủ">
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <button class="next" onclick="changeImage(1)">❯</button>
+  </div>
+  <h1>Giới thiệu về Công ty Nevo</h1>
+
+<p><strong>Nevo</strong> là công ty thiết kế và thi công xây dựng chuyên nghiệp, mang đến các giải pháp toàn diện từ thiết kế kiến trúc, nội thất đến thi công và giám sát công trình. Với đội ngũ kiến trúc sư, kỹ sư giàu kinh nghiệm, chúng tôi cam kết tạo nên những công trình chất lượng, bền vững và mang tính thẩm mỹ cao.</p>
+
+<h2>Tầm nhìn & Sứ mệnh</h2>
+<p>
+  Nevo hướng tới mục tiêu trở thành một trong những công ty hàng đầu trong lĩnh vực xây dựng tại Việt Nam. Chúng tôi không chỉ chú trọng vào chất lượng công trình mà còn đặt yếu tố bền vững, tiết kiệm năng lượng và thân thiện môi trường lên hàng đầu.
+</p>
+<ul>
+  <li><strong>Tầm nhìn:</strong> Trở thành biểu tượng uy tín trong ngành xây dựng với các công trình hiện đại, an toàn và giàu tính nghệ thuật.</li>
+  <li><strong>Sứ mệnh:</strong> Kiến tạo không gian sống và làm việc lý tưởng cho cộng đồng, đồng hành cùng sự phát triển bền vững của xã hội.</li>
+</ul>
+
+<h2>Giá trị cốt lõi</h2>
+<ul>
+  <li><strong>Uy tín:</strong> Luôn giữ đúng cam kết với khách hàng trong mọi dự án.</li>
+  <li><strong>Chất lượng:</strong> Không ngừng cải tiến kỹ thuật và vật liệu để mang đến sản phẩm tốt nhất.</li>
+  <li><strong>Sáng tạo:</strong> Thiết kế độc đáo, phù hợp với xu hướng và nhu cầu sử dụng thực tế.</li>
+  <li><strong>Trách nhiệm:</strong> Đặt lợi ích khách hàng và cộng đồng làm trọng tâm trong mọi quyết định.</li>
+</ul>
+
+<h2>Dịch vụ chính</h2>
+<ul>
+  <li><strong>Thiết kế kiến trúc & nội thất:</strong> Mang đến không gian sống và làm việc tinh tế, tiện nghi và thẩm mỹ.</li>
+  <li><strong>Thi công xây dựng:</strong> Đáp ứng đầy đủ các loại hình công trình dân dụng, công nghiệp, nhà phố, biệt thự, chung cư, nhà máy, v.v.</li>
+  <li><strong>Tư vấn & giám sát:</strong> Hỗ trợ kiểm soát chất lượng, tiến độ, chi phí và đảm bảo an toàn trong quá trình thi công.</li>
+</ul>
+
+<h2>Thành tựu nổi bật</h2>
+<p>
+  Với hàng trăm công trình trên khắp cả nước, Nevo đã trở thành đối tác tin cậy của nhiều chủ đầu tư lớn. Một số dự án tiêu biểu có thể kể đến như: biệt thự cao cấp tại Hải Dương, nhà máy sản xuất 3A, văn phòng công ty ACB, và nhiều công trình dân dụng, thương mại khác.
+</p>
+<h2>Phản hồi từ khách hàng</h2>
+<div class="testimonial">
+  <p>"Chúng tôi rất hài lòng với dịch vụ của Nevo. Từ khâu thiết kế đến thi công đều được thực hiện chuyên nghiệp và đúng cam kết." - <strong>Anh Hiếu, Chủ đầu tư</strong></p>
+  <p>"Nevo đã giúp chúng tôi hiện thực hóa ý tưởng về một không gian làm việc hiện đại và sáng tạo." - <strong>Anh Chí, Giám đốc điều hành</strong></p>
+</div>
+<section id="san-pham">
+  <h2>Sản phẩm tiêu biểu</h2>
+  <p>Nevo cung cấp đa dạng sản phẩm thiết kế và thi công:</p>
+  <ul>
+    <li>Nhà phố hiện đại, tối ưu không gian sống</li>
+    <li>Biệt thự sang trọng, phong cách tân cổ điển</li>
+    <li>Chung cư cao tầng & nhà ở xã hội</li>
+    <li>Các công trình công nghiệp như nhà máy, kho bãi</li>
+  </ul>
+</section>
+
+<section id="tin-tuc">
+  <h2>Tin tức mới nhất</h2>
+  <p>Chúng tôi luôn cập nhật thông tin mới nhất về xu hướng xây dựng:</p>
+  <ul>
+    <li><strong>20/04/2025:</strong> Nevo khai trương chi nhánh mới tại Hải Phòng</li>
+    <li><strong>10/03/2025:</strong> Ra mắt giải pháp “Xây dựng xanh thông minh”</li>
+  </ul>
+</section>
+
+<section id="hoat-dong">
+  <h2>Hoạt động cộng đồng</h2>
+  <p>Nevo không chỉ xây dựng công trình mà còn góp phần xây dựng cộng đồng:</p>
+  <ul>
+    <li>Tham gia chương trình “Mái ấm cho người nghèo”</li>
+    <li>Ủng hộ đồng bào lũ lụt miền Trung</li>
+    <li>Hỗ trợ sinh viên kiến trúc thông qua học bổng hàng năm</li>
+  </ul>
+</section>
+
+<section id="thu-vien-ho-so-mau">
+  <h2>Thư viện hồ sơ mẫu</h2>
+  <p>Dưới đây là một số mẫu hồ sơ thiết kế mà chúng tôi cung cấp:</p>
+  <ul>
+    <li><a href="#">Mẫu thiết kế biệt thự 2 tầng</a></li>
+    <li><a href="#">Mẫu nhà phố hiện đại</a></li>
+    <li><a href="#">Mẫu nhà xưởng công nghiệp</a></li>
+  </ul>
+</section>
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <p>&copy; 2025 Công ty Nevo. Tất cả các quyền được bảo lưu.</p>
+      <p>Tòa nhà Hoàng Hải Lê - Đường Quách Đình Bảo - Phường Tiền Phong Thành Phố Thái Bình</p>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:contact@nevo.com"> congtynevo@gmail.comn</a> 
+       <a href="tel:+840123456789">02273.835.768 Fax: 02273.835.769</a>
+    </div>
+  </div>
+ <!-- Bản đồ Google Maps -->
+<div style="max-width: 1400px; margin: 0 auto; padding: 20px;">
+  <h3 style="text-align:center; margin-bottom: 10px;">Vị trí công ty</h3>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467.25554218133175!2d106.33270097550577!3d20.463372055883518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135e53d09005e79%3A0x40f4329f5bcf417b!2zQ8O0bmcgdHkgY-G7lSBwaOG6p24gxJHhuqd1IHTGsCB0aMawxqFuZyBt4bqhaSBIb8OgbmcgSOG6o2kgTMOq!5e0!3m2!1svi!2s!4v1745573376347!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    width="100%" 
+    height="300" 
+    style="border:0; border-radius:8px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+</footer>
+<script>
+  // Slideshow logic
+  const images = ["ảnh trang chủ.jpg", "ảnh trang chủ 2.jpg"];
+  let currentIndex = 0;
+  const slideshow = document.getElementById("slideshow");
+  let intervalId;
+
+  function showImage(index) {
+    slideshow.style.opacity = 0;
+    setTimeout(() => {
+      slideshow.src = images[index];
+      slideshow.style.opacity = 1;
+    }, 500);
+  }
+
+  function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = images.length - 1;
+    if (currentIndex >= images.length) currentIndex = 0;
+    showImage(currentIndex);
+  }
+
+  function startSlideshow() {
+    intervalId = setInterval(() => {
+      changeImage(1);
+    }, 4000);
+  }
+
+  function stopSlideshow() {
+    clearInterval(intervalId);
+  }
+
+  slideshow.addEventListener("mouseenter", stopSlideshow);
+  slideshow.addEventListener("mouseleave", startSlideshow);
+
+  startSlideshow();
+</script>
+
+</body>
+</html>
